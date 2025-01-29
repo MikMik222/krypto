@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>777</width>
+    <height>264</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::ActionsContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>RSA šifra</string>
+  </property>
+  <widget class="QRadioButton" name="radioButtonSiforvat">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>0</y>
+     <width>121</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Podepsat soubor</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButtonOdsifrovat">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>20</y>
+     <width>121</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ověřit soubor</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonNacist">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>50</y>
+     <width>151</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Načíst soubor</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonUloz">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>140</y>
+     <width>161</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Uložit podepsaný soubor</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelklic">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>60</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Klíčové páry</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelklic_2">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>100</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Veřejné</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelklic_6">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>170</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Privátní</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelklic_7">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>120</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>N:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelklic_8">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>150</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>E:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditRON">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>120</y>
+     <width>271</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>999999999</number>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditROE">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>150</y>
+     <width>271</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditROD">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>220</y>
+     <width>271</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelklic_9">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>220</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>D:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelklic_10">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>190</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>N:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditRON_2">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>190</y>
+     <width>271</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonGEN">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>10</y>
+     <width>111</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Generovat klíče</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonulozklice">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>40</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Uložit klíče</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonNactiklic">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>40</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Načíst klíče</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>80</y>
+     <width>351</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Žádný soubor není načtený</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonpodpis">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>110</y>
+     <width>111</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Podepsat soubor</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonover">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>110</y>
+     <width>111</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ověřit soubor</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>180</y>
+     <width>361</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
